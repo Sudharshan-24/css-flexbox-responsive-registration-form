@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox - Responsive Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="registration-page">
+        <form class="signup-form">
+            <div class="form-header">
+                <h1>Create Account</h1>
+            </div>
+
+            <div class="form-body">
+                <div class="row">
+                    <div class="input-group">
+                        <label for="">First name</label>
+                        <input type="text" placeholder="Enter your first name">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Last name</label>
+                        <input type="text" placeholder="Enter your last name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Enter your email address">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="">Password</label>
+                        <input type="password" placeholder="Enter your password">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Confirm Password</label>
+                        <input type="password" placeholder="Enter your password again">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="">Gender</label>
+                        <div class="radio-group">
+                            <div>
+                                <label for="male">
+                                    <input type="radio" name="gender" id="male">
+                                    Male
+                                </label>
+                            </div>
+                            <div>
+                                <label for="female">
+                                    <input type="radio" name="gender" id="female">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="">Hobbies</label>
+                        <div class="checkbox-group">
+                            <div>
+                                <label for="music">
+                                    <input type="checkbox" name="hobbies" id="hobbies">
+                                    Music
+                                </label>
+                            </div>
+                            <div>
+                                <label for="cooking">
+                                    <input type="checkbox" name="cooking" id="cooking">
+                                    Cook
+                                </label>
+                            </div>
+                            <div>
+                                <label for="travel">
+                                    <input type="checkbox" name="travel" id="travel">
+                                    Travel
+                                </label>
+                            </div>
+                            <div>
+                                <label for="movies">
+                                    <input type="checkbox" name="movies" id="movies">
+                                    Movie
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="">Source of Income</label>
+                        <select>
+                            <option value="">Employed</option>
+                            <option value="">Self-Employed</option>
+                            <option value="">Unemployed</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Income</label>
+                        <div class="range-group">
+                            <input type="range" onchange="changeSliderValue(this.value)" min="20" max="200" step="5"
+                                value="20">
+                            <label>14</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label>Upload Profile Picture</label>
+                        <input type="file">
+                    </div>
+                    <div class="input-group">
+                        <label>Age</label>
+                        <input type="number">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="">Bio</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-footer">
+                <button class="btn">Create</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

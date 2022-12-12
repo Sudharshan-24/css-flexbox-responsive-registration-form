@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#registration-page {
+    height: 100%;
+    background-color: #78a7ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.signup-form {
+    flex: 1;
+    background-color: #eff0f1;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 1px solid #999;
+    margin: auto 0;
+}
+
+.form-header {
+    padding: 15px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.form-header h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #666;
+}
+
+.row {
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.input-group {
+    flex: 1;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+}
+
+label {
+    color: #1bba93;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+input[type="file"],
+input[type="number"],
+textarea {
+    font-size: 18px;
+    /* width: 100%; */
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* padding: 0 10px; */
+    color: #666;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background-color: #fff;
+    outline: none;
+}
+
+.form-body {
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
+.radio-group,
+.checkbox-group,
+.range-group {
+    display: flex;
+}
+
+.radio-group div,
+.checkbox-group div {
+    flex: 1;
+}
+
+.radio-group label,
+.checkbox-group label {
+    color: #666;
+    cursor: pointer;
+}
+
+.range-group input {
+    flex: 1;
+}
+
+.range-group label {
+    margin-left: 10px;
+    background-color: #1bba93;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 17px;
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #1bba93;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    color: #bcf5e7;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .btn {
+        flex: 1;
+    }
+}
